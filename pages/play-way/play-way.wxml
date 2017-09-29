@@ -1,0 +1,12 @@
+<view class="page">
+    <view class="page__hd page-top">
+        <view class="page__title">聚会玩法</view>
+        <view class="page__desc">各种玩法大全。后期搜集整理，会有人数和推荐度的筛选。欢迎有相关资料的同学发一些文本资料到我的邮箱。</view>
+    </view>
+    <view class="page__bd">
+      <view class="weui-article">
+        <view class="title">真心话大冒险</view>
+        <view>就是划拳，或抽牌，转笔等方式选出一个人，就是受罚的人，让他选真心话还是大冒险，真心话就是问一些问题让他回答，当然不能太过分，但也是平时不会问的，必须讲真话，就是游戏规则；大冒险就是让他去做一些事，很冒险的，就要看各位的想象力勒。</view>
+      </view>
+    </view>
+</view>
