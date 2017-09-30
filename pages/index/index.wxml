@@ -20,9 +20,27 @@
                 </navigator>
             </block>
             <block>
+                <navigator url="/pages/eat/eat" class="weui-grid" hover-class="weui-grid_active">
+                    <image class="weui-grid__icon" src="../../images/icon_tabbar.png" />
+                    <view class="weui-grid__label">吃什么</view>
+                </navigator>
+            </block>
+            <block>
                 <navigator url="/pages/contact/contact" class="weui-grid" hover-class="weui-grid_active">
                     <image class="weui-grid__icon" src="../../images/icon_tabbar.png" />
                     <view class="weui-grid__label">客栈手册</view>
+                </navigator>
+            </block>
+            <block>
+                <navigator url="" class="weui-grid" hover-class="weui-grid_active">
+                    <image class="weui-grid__icon" src="../../images/icon_tabbar.png" />
+                    <view class="weui-grid__label">敬请期待</view>
+                </navigator>
+            </block>
+            <block>
+                <navigator url="" class="weui-grid" hover-class="weui-grid_active">
+                    <image class="weui-grid__icon" src="../../images/icon_tabbar.png" />
+                    <view class="weui-grid__label">敬请期待</view>
                 </navigator>
             </block>
         </view>

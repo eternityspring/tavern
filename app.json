@@ -2,8 +2,8 @@
   "pages":[
     "pages/index/index",
     "pages/moment/moment",
-    "pages/contact/contact",
     "pages/play-way/play-way",
+    "pages/contact/contact",
     "pages/logs/logs"
   ],
   "window":{

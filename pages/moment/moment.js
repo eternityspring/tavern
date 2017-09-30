@@ -24,7 +24,7 @@ Page({
       self.setData({
         millisecond: self.data.millisecond + 1
       })
-    },1)
+    },10)
   },
   stopMoment(){
     var self = this;
