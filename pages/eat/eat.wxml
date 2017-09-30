@@ -1,17 +1,9 @@
-<view class="container">
+<view class="eat" bindtouchstart="startRandom" bindtouchend="stopRandom">
     <view class="page__hd text-center">
-        <view class="text-gray">欢迎来到本客栈。</view>
-        <view class="text-gray">我将会不定期更新一些有趣的功能。</view>
-        <contact-button 
-        type="default-dark" 
-        size="20"
-        session-from="weapp"
-        >
-        </contact-button>
-        
+        <view class="result">{{result}}</view>
     </view>
     <view class="weui-footer weui-footer_fixed-bottom">
-        <view class="weui-footer__text">有什么想说的，点击上方小图标给我留言</view>
-        <view class="weui-footer__text">微信：w809537298</view>
+        <view class="weui-footer__text">默认长按屏幕开始随机 离开屏幕停止随机</view>
     </view>
+    <text class="select-item" wx:for="{{randomData}}" style="top:{{ top[index] }}px;left:{{ left[index]}}px;opacity:{{ opacity[index] }}" id="random()">{{item}}</text>
 </view>

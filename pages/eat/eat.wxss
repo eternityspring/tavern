@@ -1,0 +1,12 @@
+.eat{
+	background:url(../../images/eat-bg.jpg) top center repeat;
+	min-height:100vh;
+}
+.result{
+	font-size: 32px;
+	position: relative;
+	padding-top:50%;
+}
+.select-item{
+	position: absolute;
+}

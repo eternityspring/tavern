@@ -1,5 +1,6 @@
 {
   "pages":[
+    "pages/eat/eat",
     "pages/index/index",
     "pages/moment/moment",
     "pages/play-way/play-way",
