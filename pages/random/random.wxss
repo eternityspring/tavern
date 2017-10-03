@@ -1,0 +1,12 @@
+.top-info{
+    margin-top: 20px;
+}
+.millisecond{
+    margin-top: 50px;
+    color: #ccc;
+}
+.result{
+    margin-top: 45%;
+    font-size: 80px;
+    color: #666;
+}

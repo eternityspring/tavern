@@ -1,10 +1,8 @@
-<view bindtouchstart="startMoment" bindtouchend="stopMoment">
-  <view class="text-center">
-    <view class="top-info text-gray">抓住一秒{{count}}次</view>
-    <view class="millisecond">{{millisecond}}</view>
-    <view class="result">{{result}}</view>
-  </view>
-  <view class="weui-footer weui-footer_fixed-bottom">
-      <view class="weui-footer__text">精确按住屏幕一秒 其他时间无效</view>
-  </view>
+<view class="page-content text-center" bindtouchstart="startMoment" bindtouchend="stopMoment">
+  <view class="top-info text-gray">抓住一秒{{count}}次</view>
+  <view class="millisecond">{{millisecond}}</view>
+  <view class="result">{{result}}</view>
+</view>
+<view class="weui-footer weui-footer_fixed-bottom">
+  <view class="weui-footer__text">精确按住屏幕一秒 其他时间无效</view>
 </view>

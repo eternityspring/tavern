@@ -1,9 +1,12 @@
-<view class="eat" bindtouchstart="startRandom" bindtouchend="stopRandom">
+<view class="page-content eat {{randomShow?'':'page-bg'}}" bindtouchstart="startRandom" bindtouchend="stopRandom">
     <view class="page__hd text-center">
-        <view class="result">{{result}}</view>
+        <view class="content-result">吃<text class="{{selectCount>0?'result':''}}">{{result}}</text></view>
     </view>
     <view class="weui-footer weui-footer_fixed-bottom">
         <view class="weui-footer__text">默认长按屏幕开始随机 离开屏幕停止随机</view>
     </view>
-    <text class="select-item" wx:for="{{randomData}}" style="top:{{ top[index] }}px;left:{{ left[index]}}px;opacity:{{ opacity[index] }}" id="random()">{{item}}</text>
+    <text wx:if="{{randomShow}}" class="select-item" wx:for="{{randomData}}"
+          wx:key="{{item}}"
+          style="top:{{ top[index] }}px;left:{{ left[index]}}px;opacity:{{ opacity[index] }}"
+          id="random()">{{item}}</text>
 </view>
