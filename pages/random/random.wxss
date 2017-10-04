@@ -1,12 +1,18 @@
-.top-info{
-    margin-top: 20px;
+.page-random {
+  overflow: hidden;
 }
-.millisecond{
-    margin-top: 50px;
-    color: #ccc;
+
+.top-info {
+  margin-top: 20px;
 }
-.result{
-    margin-top: 45%;
-    font-size: 80px;
-    color: #666;
+
+.millisecond {
+  margin-top: 50px;
+  color: #ccc;
+}
+
+.result {
+  margin-top: 45%;
+  font-size: 80px;
+  color: #666;
 }

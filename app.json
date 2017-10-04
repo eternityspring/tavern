@@ -1,8 +1,8 @@
 {
   "pages":[
-    "pages/random/random",
-    "pages/index/index",
     "pages/eat/eat",
+    "pages/index/index",
+    "pages/random/random",
     "pages/moment/moment",
     "pages/play-way/play-way",
     "pages/contact/contact",
