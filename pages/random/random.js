@@ -84,4 +84,38 @@ Page({
       }
     })
   },
+  unSetting(){
+    // 清除数据缓存
+    wx.removeStorage({
+      key: 'randomMinNum',
+      success: function(res) {
+      }
+    })
+    wx.removeStorage({
+      key: 'randomMaxNum',
+      success: function(res) {
+
+      }
+    })
+    wx.removeStorage({
+      key: 'randomNum',
+      success: function(res) {
+        wx.showModal({
+          title: '提示',
+          content: '重置成功',
+          showCancel: false,
+          success: function(res) {
+
+          }
+        })
+      }
+    })
+    // 重置数据
+    this.setData({
+      count: 0,
+      result:0,
+      minNum:0,
+      maxNum:1000,
+    })
+  },
 })

@@ -15,7 +15,8 @@ Page({
     selectCount:0,
     randomShow:false,
     menuShow:false,
-    randomData:[],
+    randomData:'',
+    randomArray:[],
     top:[],
     left:[],
     opacity:[],
@@ -24,6 +25,26 @@ Page({
     randomFlag:null,
   },
   onLoad: function () {
+    var self = this;
+    self.setMenu();
+    // 获取上一次的菜单
+    wx.getStorage({
+      key:'eatMenu',
+      success: function(res){
+        self.setData({
+          randomData:res.data,
+          randomArray:res.data.split(" "),
+        })
+      }
+    })
+    self.getWindowsInfo(function (res) {
+      self.setData({
+        windowWidth:res.windowWidth,
+        windowHeight:res.windowHeight
+      })
+    })
+  },
+  setMenu(){
     var self = this;
     var hour = (new Date).getHours();
     var bookIdx = 0;
@@ -36,14 +57,9 @@ Page({
       bookIdx = 2;
     }
     self.setData({
-      randomData:this.data.book[bookIdx].content
+      randomData:this.data.book[bookIdx].content,
+      randomArray:this.data.book[bookIdx].content.split(" "),
     });
-    self.getWindowsInfo(function (res) {
-      self.setData({
-        windowWidth:res.windowWidth,
-        windowHeight:res.windowHeight
-      })
-    })
   },
   getWindowsInfo(callback){
     wx.getSystemInfo({
@@ -127,6 +143,32 @@ Page({
     var self = this;
     self.setData({
       randomData:e.detail.value.replace(/\s+/g,' '),
+      randomArray:e.detail.value.replace(/\s+/g,' ').split(" "),
+    })
+    // 保存当前菜单
+    wx.setStorage({
+      key: 'eatMenu',
+      data: self.data.randomData,
+      success: function(res){
+        // console.log('保存成功')
+      }
+    })
+  },
+  unsetMenu(){
+    var self = this;
+    self.setMenu();
+    wx.removeStorage({
+      key: 'eatMenu',
+      success: function(res) {
+        wx.showModal({
+          title: '提示',
+          content: '重置菜单成功',
+          showCancel: false,
+          success: function(res) {
+
+          }
+        })
+      }
     })
   },
 })

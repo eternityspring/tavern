@@ -3,10 +3,15 @@
         <view class="content-result">吃<text class="{{selectCount>0?'result':''}}">{{result}}</text></view>
     </view>
     <view class="weui-footer weui-footer_fixed-bottom">
-        <view class="weui-footer__text" bindtouchend="showMenu">自定义菜单 空格分隔不同菜品</view>
+        <view class="weui-flex">
+            <view class="weui-flex__item"></view>
+            <view class="weui-flex__item weui-footer__text" bindtouchend="showMenu">自定义菜单</view>
+            <view class="weui-flex__item weui-footer__text" bindtouchend="unsetMenu">重置菜单</view>
+            <view class="weui-flex__item"></view>
+        </view>
         <view class="weui-footer__text">默认长按屏幕开始随机 离开屏幕停止随机</view>
     </view>
-    <text wx:if="{{randomShow}}" class="select-item" wx:for="{{randomData}}"
+    <text wx:if="{{randomShow}}" class="select-item" wx:for="{{randomArray}}"
           wx:key="{{item}}"
           style="top:{{ top[index] }}px;left:{{ left[index]}}px;opacity:{{ opacity[index] }}"
           id="random()">{{item}}</text>
@@ -15,12 +20,12 @@
 <view wx:if="{{menuShow}}">
     <view class="weui-mask"></view>
     <view class="weui-dialog">
-        <view class="title">~ 菜单 ~</view>
         <view class="content text-left">
             <textarea value="{{randomData}}"
                       bindinput="setMenuData"
                       maxlength="500"
                       placeholder="请输入菜单，用空格分隔不同菜品" auto-focus />
+            <view class="tips">空格分隔不同菜品</view>
         </view>
         <view class="weui-dialog__ft footer">
             <a href="javascript:;"

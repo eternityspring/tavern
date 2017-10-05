@@ -3,7 +3,12 @@
   <view class="result">{{result}}</view>
 </view>
 <view class="weui-footer weui-footer_fixed-bottom">
-  <view class="weui-footer__text" bindtouchend="settingShow">设置</view>
+  <view class="weui-flex">
+    <view class="weui-flex__item"></view>
+    <view class="weui-flex__item weui-footer__text" bindtouchend="settingShow">设置</view>
+    <view class="weui-flex__item weui-footer__text" bindtouchend="unSetting">重置</view>
+    <view class="weui-flex__item"></view>
+  </view>
   <view class="weui-footer__text">长安屏幕生成新的随机数</view>
 </view>
 <!-- 设置随机数范围 -->
