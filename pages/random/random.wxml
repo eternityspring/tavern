@@ -3,5 +3,41 @@
   <view class="result">{{result}}</view>
 </view>
 <view class="weui-footer weui-footer_fixed-bottom">
+  <view class="weui-footer__text" bindtouchend="settingShow">设置</view>
   <view class="weui-footer__text">长安屏幕生成新的随机数</view>
+</view>
+<!-- 设置随机数范围 -->
+<view wx:if="{{settingShow}}">
+  <view class="weui-mask"></view>
+  <view class="weui-dialog">
+    <view class="content text-left">
+      <view class="weui-cell">
+        <view class="weui-cell__hd">
+          <view class="weui-label">最小值</view>
+        </view>
+        <view class="weui-cell__bd">
+          <input class="weui-input" type="number"
+                 value="{{minNum}}"
+                 bindinput="setMinValue" auto-focus
+                 pattern="[0-9]*" placeholder="大于" />
+        </view>
+      </view>
+      <view class="weui-cell">
+        <view class="weui-cell__hd">
+          <view class="weui-label">最大值</view>
+        </view>
+        <view class="weui-cell__bd">
+          <input class="weui-input" type="number"
+                 value="{{maxNum}}"
+                 bindinput="setMaxValue"
+                 pattern="[0-9]*" placeholder="小于" />
+        </view>
+      </view>
+    </view>
+    <view class="weui-dialog__ft footer">
+      <a href="javascript:;"
+         class="weui-dialog__btn weui-dialog__btn_primary"
+         bindtouchend="settingHide">确定</a>
+    </view>
+  </view>
 </view>

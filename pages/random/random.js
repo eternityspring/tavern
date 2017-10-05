@@ -4,6 +4,7 @@ Page({
     result:0,
     minNum:0,
     maxNum:1000,
+    settingShow:false,
   },
   onLoad: function () {
     var self = this;
@@ -11,7 +12,23 @@ Page({
       key:'randomNum',
       success: function(res){
         self.setData({
-          result:res.data
+          result:res.data,
+        })
+      }
+    })
+    wx.getStorage({
+      key:'randomMinNum',
+      success: function(res){
+        self.setData({
+          minNum:res.data,
+        })
+      }
+    })
+    wx.getStorage({
+      key:'randomMaxNum',
+      success: function(res){
+        self.setData({
+          maxNum:res.data,
         })
       }
     })
@@ -19,7 +36,7 @@ Page({
   randomNum(){
     var self = this;
     self.setData({
-      result:self.data.minNum+Math.floor(Math.random()*(self.data.maxNum-self.data.minNum))
+      result:self.data.minNum*1+Math.floor(Math.random()*(self.data.maxNum*1-self.data.minNum*1))
     })
     wx.setStorage({
       key: 'randomNum',
@@ -28,5 +45,43 @@ Page({
         // console.log('保存成功')
       }
     })
-  }
+  },
+  settingShow(){
+    var self = this;
+    self.setData({
+      settingShow:true,
+    })
+  },
+  settingHide(){
+    var self = this;
+    self.setData({
+      settingShow:false,
+    })
+  },
+  setMinValue(e){
+    var self = this;
+    self.setData({
+      minNum:e.detail.value,
+    })
+    wx.setStorage({
+      key: 'randomMinNum',
+      data: self.data.minNum,
+      success: function(res){
+        // console.log('保存成功')
+      }
+    })
+  },
+  setMaxValue(e){
+    var self = this;
+    self.setData({
+      maxNum:e.detail.value,
+    })
+    wx.setStorage({
+      key: 'randomMaxNum',
+      data: self.data.maxNum,
+      success: function(res){
+        // console.log('保存成功')
+      }
+    })
+  },
 })
