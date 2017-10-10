@@ -1,5 +1,6 @@
 {
   "pages":[
+    "pages/brag/brag",
     "pages/index/index",
     "pages/random/random",
     "pages/eat/eat",
