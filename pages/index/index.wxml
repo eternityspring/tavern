@@ -2,54 +2,54 @@
 <view class="container">
   <view class="page">
     <view class="page__hd">
-        <view class="page__title">黄龙客栈</view>
-        <view class="page__desc">相对于传统客栈，我们可以吃喝玩乐。但是在网络上，并不能实现传统意义上的吃喝玩乐。所以，本客栈希望做一个网络友人的聚集玩乐的栖息地和工具箱。</view>
+      <view class="page__title">黄龙客栈</view>
+      <view class="page__desc">相对于传统客栈，我们可以吃喝玩乐。但是在网络上，并不能实现传统意义上的吃喝玩乐。所以，本客栈希望做一个网络友人的聚集玩乐的栖息地和工具箱。</view>
     </view>
     <view class="page__bd">
-        <view class="weui-grids">
-            <block>
-                <navigator url="/pages/play-way/play-way" class="weui-grid" hover-class="weui-grid_active">
-                    <image class="weui-grid__icon" src="../../images/icon_tabbar.png" />
-                    <view class="weui-grid__label">玩法大全</view>
-                </navigator>
-            </block>
-            <block>
-                <navigator url="/pages/moment/moment" class="weui-grid" hover-class="weui-grid_active">
-                    <image class="weui-grid__icon" src="../../images/icon_tabbar.png" />
-                    <view class="weui-grid__label">抓住一秒</view>
-                </navigator>
-            </block>
-            <block>
-                <navigator url="/pages/random/random" class="weui-grid" hover-class="weui-grid_active">
-                    <image class="weui-grid__icon" src="../../images/icon_tabbar.png" />
-                    <view class="weui-grid__label">随机数</view>
-                </navigator>
-            </block>
-            <block>
-                <navigator url="/pages/eat/eat" class="weui-grid" hover-class="weui-grid_active">
-                    <image class="weui-grid__icon" src="../../images/icon_tabbar.png" />
-                    <view class="weui-grid__label">吃什么</view>
-                </navigator>
-            </block>
-            <block>
-              <navigator url="/pages/brag/brag" class="weui-grid" hover-class="weui-grid_active">
-                <image class="weui-grid__icon" src="../../images/icon_tabbar.png" />
-                <view class="weui-grid__label">吹牛</view>
-              </navigator>
-            </block>
-            <block>
-                <navigator url="/pages/contact/contact" class="weui-grid" hover-class="weui-grid_active">
-                    <image class="weui-grid__icon" src="../../images/icon_tabbar.png" />
-                    <view class="weui-grid__label">客栈手册</view>
-                </navigator>
-            </block>
-            <block>
-                <navigator url="" class="weui-grid" hover-class="weui-grid_active">
-                    <image class="weui-grid__icon" src="../../images/icon_tabbar.png" />
-                    <view class="weui-grid__label">敬请期待</view>
-                </navigator>
-            </block>
-        </view>
+      <view class="weui-grids">
+        <block>
+          <navigator url="/pages/play-way/play-way" class="weui-grid" hover-class="weui-grid_active">
+            <image class="weui-grid__icon" src="../../images/icon_tabbar.png"/>
+            <view class="weui-grid__label">玩法大全</view>
+          </navigator>
+        </block>
+        <block>
+          <navigator url="/pages/moment/moment" class="weui-grid" hover-class="weui-grid_active">
+            <image class="weui-grid__icon" src="../../images/icon_tabbar.png"/>
+            <view class="weui-grid__label">抓住一秒</view>
+          </navigator>
+        </block>
+        <block>
+          <navigator url="/pages/random/random" class="weui-grid" hover-class="weui-grid_active">
+            <image class="weui-grid__icon" src="../../images/icon_tabbar.png"/>
+            <view class="weui-grid__label">随机数</view>
+          </navigator>
+        </block>
+        <block>
+          <navigator url="/pages/eat/eat" class="weui-grid" hover-class="weui-grid_active">
+            <image class="weui-grid__icon" src="../../images/icon_tabbar.png"/>
+            <view class="weui-grid__label">吃什么</view>
+          </navigator>
+        </block>
+        <block>
+          <navigator url="/pages/brag/brag" class="weui-grid" hover-class="weui-grid_active">
+            <image class="weui-grid__icon" src="../../images/icon_tabbar.png"/>
+            <view class="weui-grid__label">吹牛</view>
+          </navigator>
+        </block>
+        <block>
+          <navigator url="/pages/contact/contact" class="weui-grid" hover-class="weui-grid_active">
+            <image class="weui-grid__icon" src="../../images/icon_tabbar.png"/>
+            <view class="weui-grid__label">客栈手册</view>
+          </navigator>
+        </block>
+        <block>
+          <navigator url="" class="weui-grid" hover-class="weui-grid_active">
+            <image class="weui-grid__icon" src="../../images/icon_tabbar.png"/>
+            <view class="weui-grid__label">敬请期待</view>
+          </navigator>
+        </block>
+      </view>
     </view>
-</view>
+  </view>
 </view>

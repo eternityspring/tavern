@@ -1,128 +1,39 @@
-<view class="page-content">
-    <view class="weui-flex text-center">
-        <view class="weui-flex__item" wx:for="{{[1]}}">
-            <view class="dice">
-                <div class="front">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-                <div class="back">
-                    <span></span>
-                </div>
-                <div class="right">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-                <div class="left">
-                    <span></span>
-                    <span></span>
-                </div>
-                <div class="top">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-                <div class="bottom">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-                <div class="side cover x"></div>
-                <div class="side cover y"></div>
-                <div class="side cover z"></div>
-            </view>
-        </view>
+<view class="page-content" bindlongpress="setRandomData">
+  <view class="dice-box dice-box{{index}}" wx:for="{{randomArray}}">
+    <view class="dice {{'roll-'+item}}">
+      <view class="item one">
+        <text></text>
+      </view>
+      <view class="item two">
+        <text></text>
+        <text></text>
+      </view>
+      <view class="item three">
+        <text></text>
+        <text></text>
+        <text></text>
+      </view>
+      <view class="item four">
+        <text></text>
+        <text></text>
+        <text></text>
+        <text></text>
+      </view>
+      <view class="item five">
+        <text></text>
+        <text></text>
+        <text></text>
+        <text></text>
+        <text></text>
+      </view>
+      <view class="item six">
+        <text></text>
+        <text></text>
+        <text></text>
+        <text></text>
+        <text></text>
+        <text></text>
+      </view>
     </view>
-    <view class="weui-flex text-center">
-        <view class="weui-flex__item" wx:for="{{[1,2,3]}}">
-            <view class="dice">
-                <div class="front">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-                <div class="back">
-                    <span></span>
-                </div>
-                <div class="right">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-                <div class="left">
-                    <span></span>
-                    <span></span>
-                </div>
-                <div class="top">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-                <div class="bottom">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-                <div class="side cover x"></div>
-                <div class="side cover y"></div>
-                <div class="side cover z"></div>
-            </view>
-        </view>
-    </view>
-    <view class="weui-flex text-center">
-        <view class="weui-flex__item" wx:for="{{[1]}}">
-            <view class="dice">
-                <div class="front">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-                <div class="back">
-                    <span></span>
-                </div>
-                <div class="right">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-                <div class="left">
-                    <span></span>
-                    <span></span>
-                </div>
-                <div class="top">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-                <div class="bottom">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-                <div class="side cover x"></div>
-                <div class="side cover y"></div>
-                <div class="side cover z"></div>
-            </view>
-        </view>
-    </view>
+  </view>
 </view>
