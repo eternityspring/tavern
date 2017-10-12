@@ -1,0 +1,128 @@
+<view class="page-content">
+    <view class="weui-flex text-center">
+        <view class="weui-flex__item" wx:for="{{[1]}}">
+            <view class="dice">
+                <div class="front">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="back">
+                    <span></span>
+                </div>
+                <div class="right">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="left">
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="top">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="bottom">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="side cover x"></div>
+                <div class="side cover y"></div>
+                <div class="side cover z"></div>
+            </view>
+        </view>
+    </view>
+    <view class="weui-flex text-center">
+        <view class="weui-flex__item" wx:for="{{[1,2,3]}}">
+            <view class="dice">
+                <div class="front">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="back">
+                    <span></span>
+                </div>
+                <div class="right">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="left">
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="top">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="bottom">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="side cover x"></div>
+                <div class="side cover y"></div>
+                <div class="side cover z"></div>
+            </view>
+        </view>
+    </view>
+    <view class="weui-flex text-center">
+        <view class="weui-flex__item" wx:for="{{[1]}}">
+            <view class="dice">
+                <div class="front">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="back">
+                    <span></span>
+                </div>
+                <div class="right">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="left">
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="top">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="bottom">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="side cover x"></div>
+                <div class="side cover y"></div>
+                <div class="side cover z"></div>
+            </view>
+        </view>
+    </view>
+</view>
