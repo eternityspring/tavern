@@ -2,7 +2,7 @@
 <view class="container">
   <view class="page">
     <view class="page__hd">
-        <view class="page__title">前端开发客栈</view>
+        <view class="page__title">黄龙客栈</view>
         <view class="page__desc">相对于传统客栈，我们可以吃喝玩乐。但是在网络上，并不能实现传统意义上的吃喝玩乐。所以，本客栈希望做一个网络友人的聚集玩乐的栖息地和工具箱。</view>
     </view>
     <view class="page__bd">
@@ -40,7 +40,7 @@
             <block>
                 <navigator url="" class="weui-grid" hover-class="weui-grid_active">
                     <image class="weui-grid__icon" src="../../images/icon_tabbar.png" />
-                    <view class="weui-grid__label">敬请期待</view>
+                    <view class="weui-grid__label">谁买单</view>
                 </navigator>
             </block>
         </view>
