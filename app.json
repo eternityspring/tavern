@@ -1,7 +1,7 @@
 {
   "pages":[
-    "pages/brag/brag",
     "pages/index/index",
+    "pages/brag/brag",
     "pages/random/random",
     "pages/eat/eat",
     "pages/moment/moment",

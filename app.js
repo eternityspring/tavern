@@ -1,7 +1,23 @@
 //app.js
 App({
   onLaunch: function () {
-    // console.log('App Launch')
+    // 获取登录code
+    wx.login({
+      success: function(res) {
+        if (res.code) {
+          //发起网络请求
+          wx.request({
+            url: 'http://localhost/userInfo',
+            data: {
+              code: res.code
+            }
+          })
+        } else {
+          console.log('登录失败！' + res.errMsg)
+        }
+      }
+    });
+
   },
   onShow: function () {
     // console.log('App Show')
